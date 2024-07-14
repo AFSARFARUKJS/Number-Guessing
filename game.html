@@ -1,0 +1,43 @@
+<body>
+    
+<center>
+<h1>Guess the Number</h1>
+<h2>🧑‍💻<input id="box1"  type="number" placeholder="Enter the number" ></h2>
+<button onclick="calc()">check</button>
+<h2 id="rorw">Guess the number from 1 to 10</h2>
+<p  id="score">Your Score is : 10</p>
+
+
+</center>
+</body>
+<script>
+var a=(Math.random())*10
+a=(Math.floor(a))
+var  box_value=document.getElementById("box1")
+var score=document.getElementById("score");
+
+
+var s=10
+function calc(){
+    var bv=(box_value.value)
+    // console.log(bv+" "+guess)
+    if(bv==a){
+        alert("you won")
+        score.textContent="Your score is "+s
+    }
+    else{
+        s--;
+        score.textContent="Your score is "+s
+    }
+}
+</script>
+<style>
+    body{
+        margin-top:150px;
+        background-color: crimson;
+        color:rgb(60, 241, 15)
+    }
+</style> 
+<title>
+    AFSAR
+</title>
